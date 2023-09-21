@@ -127,6 +127,20 @@ São operadores utilizados para verificar se um objeto está presente em uma seq
 in
 ```
 
+## Estruturas Condicionais e de Repetição
+
+## Identação e blocos
+
+Identar o código é uma forma de manter o código fonte mais legível e manutenível.
+Mas em python o interpretador consegue determinar onde o bloco inicia e onde ele termina.
+A identação em python é feita utilizando-se 4 espaços em branco
+```
+def sacar (self, valor: float) -> none:
+    if self.saldo >= valor:
+        self.saldo -= valor
+```
+
+
 
 
 
