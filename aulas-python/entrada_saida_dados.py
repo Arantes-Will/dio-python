@@ -1,0 +1,7 @@
+nome = input("Informe o seu nome: ")
+idade = input("Informe a sua idade: ")
+print(nome,idade)
+print("Teste", end = "...\n")
+print(nome, idade, sep = "#")
+print(5//2)
+print(float("a"))
