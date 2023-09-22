@@ -18,4 +18,5 @@ print(pares)
 ## quero retornar meus números ao quadrado
 
 quadrado = [numero ** 2 for numero in numeros]
+          #retorno ------- iteracao----------
 print(quadrado)
