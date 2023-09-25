@@ -49,9 +49,3 @@ print(cores)
 #key=lambda X:len(x), reverse=True - retorna a funcão acima espelhada
 cores.sort()
 
- [n**2 if n > 6 else n for n in range(10) if n % 2 == 0]
-
-
-
-
-
