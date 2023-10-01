@@ -47,5 +47,5 @@ print(cores)
 # reverse = TRUE - retorna a lista espelhada
 #key=lambda X:len(x) - retorna a lista de acordo com a quantidade de caracteres
 #key=lambda X:len(x), reverse=True - retorna a funcão acima espelhada
-cores.sort()
+print(cores.sort())
 
