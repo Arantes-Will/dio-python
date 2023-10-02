@@ -28,6 +28,16 @@ Os sistemas de gerênciamento de banco de dados fornecem ferramentas e recursos 
 #### MER e DER
 O Modelo Entidade-Relacionamento (MER) é representado através de diagramas chamados Diagramas Entidade-Relacionamento (DER).
 
+#### Entidade
+As entidades são nomeadas com substatntivos concretos ou abstratos que representem de forma clara sua função dentro do domínio.
+
+#### Atributos
+Os atributos são as caracteristicas e propriedades das entidades. Elas descrevem informações específicas sobre uma entidade.
+
+Vamos utilizar como plataforma de estudo site https://app.creately.com/
+
+
+
 
 
 
