@@ -29,12 +29,24 @@ Os sistemas de gerênciamento de banco de dados fornecem ferramentas e recursos 
 O Modelo Entidade-Relacionamento (MER) é representado através de diagramas chamados Diagramas Entidade-Relacionamento (DER).
 
 #### Entidade
-As entidades são nomeadas com substatntivos concretos ou abstratos que representem de forma clara sua função dentro do domínio.
+As entidades são nomeadas com substantivos concretos ou abstratos que representem de forma clara sua função dentro do domínio.
 
 #### Atributos
 Os atributos são as caracteristicas e propriedades das entidades. Elas descrevem informações específicas sobre uma entidade.
 
 Vamos utilizar como plataforma de estudo site https://app.creately.com/
+
+#### Relacionamentos
+Os relacionamentos representam as associações entre entidades
+
+#### Cardinalidade
+Se refere a forma como as nossas entidades se relacionam uma com as outras, indica o número máximo de instâncias que podemos ter numa entidade relacionada a outra entidade
+- Relacionamento 1..1 (um para um)
+- Relacionamento 1..n ou 1..* (um para muitos)
+- Relacionamento n..n ou *..* (muitos para muitos)
+
+Criando diagramas com IA: https://app.quickdatabasediagrams.com/#/
+
 
 
 
