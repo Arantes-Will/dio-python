@@ -47,6 +47,41 @@ Se refere a forma como as nossas entidades se relacionam uma com as outras, indi
 
 Criando diagramas com IA: https://app.quickdatabasediagrams.com/#/
 
+#### Configuração do Ambiente
+https://accounts.cloudclusters.io/login/?next=https://clients.cloudclusters.io/
+
+## 💻 Introdução a Banco de Dados Relacionais (SQL)
+
+#### Tabelas
+Ela é usada para armazenar dados de forma organizada. Cada tabela em um banco de dados relacional tem um nome único e é dividida em colunas e linhas.
+
+#### Colunas
+Uma coluna é uma estrutura dentro de uma tabela que representa um atributo específico dos dados armazenados. Cada coluna tem um nome único e um tipo de dados
+associado que define o tipo de informação que pode ser armazenado nela, como número, textos, datas e etc.
+
+#### Registros
+Também conhecido como linha ou tupla, é uma instância individual de dados em uma tabela.
+
+#### Comandos:
+```
+CREATE TABLE {{nome}}
+  ({{coluna}} {{tipo}} {{opções}} COMMENT
+{{´COMENTARIO`}});
+
+```
+Restrições de valor: 
+- NOT NULL (Esta coluna é obrigatória?)
+- UNIQUE (Garantimos que não terá outro registro igual)
+- DEFAULT 
+Chaves primárias e estrangeiras
+Auto Incremento (De forma automática, auto implementamos informações)
+
+
+
+
+
+
+
 
 
 
