@@ -76,6 +76,45 @@ Restrições de valor:
 Chaves primárias e estrangeiras
 Auto Incremento (De forma automática, auto implementamos informações)
 
+#### Operações CRUD: 
+
+##### CREATE
+
+```
+INSERT INTO
+{{nome-tabela}}
+([coluna1, coluna2, ...]) *** você pode ocultar as colunas
+VALUES
+([valor-coluna1,valor-coluna2,...])
+
+```
+##### READ
+
+```
+SELECT {{lista_colunas}}
+FROM tabela;
+
+Onde * retorna todas as colunas
+
+SELECT {{lista_colunas}}
+FROM tabela
+WHERE {{condicao}} *** Com critério de seleção
+
+```
+- = (igualdade)
+- <> ou != (desigualdade)
+- > (maior que)
+- < (menor que)
+- >= (maior ou igual que)
+- <= (menor ou igual que)
+- LIKE (comparação de padrões)
+- IN (pertence a uma lista de valores)
+- BETWEEN (dentro de um intervalo)
+- AND (e lógico)
+- OR (ou lógico)
+
+
+
 
 
 
