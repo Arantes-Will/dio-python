@@ -200,6 +200,80 @@ DELETE FROM reservas WHERE status = 'cancelada';
 
 ```
 
+#### Alterando e Excluindo Tabelas
+
+##### Drop Table
+O comando DROP TABLE é usado no SQL - para remover uma tabela existente de um banco de dados relacional.
+Ele exclui permanentemente a tabela
+```
+DROP TABLE {{tabela}}
+
+```
+
+##### Alter Table
+A cláusula ALTER TABLE é usada no SQL para modificar a estrutura de uma tabela existente em um banco de dados relacional.
+
+Ela permite:
+-  Adicionar, alterar ou excluir colunas
+- Modificar as restrições e índices
+- Renomear a tabela, entre outras alterações
+
+```
+ALTER TABLE {{tabela}}
+
+``` 
+## 💻 Chaves Primárias e Estrangeiras
+
+
+#### Chave Primária
+A chave primária é um atributo ou um conjunto de atributos que identifica de forma exclusiva cada registro de nossa tabela, é responsavel por garantir a integridade
+dos nossos dados, pois impede a duplicação de registros e ajuda na recuperação de informações.
+
+```
+CREATE TABLE {{tabela}}
+(ID PRIMARY KEY AUTOINCREMENT, ...); *** Com o auto incremento o banco é responsavel pela criação dos IDS
+ALTER TABLE {{tabela}}
+MODIFY COLUMN ID INT PRIMARY KEY;
+
+```
+
+- Identifica exclusivamente
+- Não pode conter valores nulos (NULL)
+- Uma tabela pode ter apenas uma chave primária
+
+#### Chave Estrangeira
+É usada para estabelecer e manter a integridade dos dados entre tabelas relacionadas.
+- Pode ser numa (NOT NULL); *** registro órfão
+- É possível ter mais de uma (ou nenhuma) em uma tabela.
+
+```
+CREATE TABLE {{tabela}} (
+id INT PRIMARY KEY,
+chave_estrangeira INT,
+FOREIGN KEY (chave_estrangeira) REFERENCES {{ outra tabela }} (id)
+);
+
+```
+
+Caso precisarmos fazer uma alteração de tabela, ao invés de alterarmos uma coluna, vamos adicionar uma CONSTRAINT que são responsáveis por manter
+a integridade referêncial dos nossos dados
+
+```
+ALTER TABLE {{tabela}}
+ADD CONSTRAINT {{ nome_constraint }}
+FOREIGN KEY (ID_)
+REFERENCES {{outra_tabela}} (ID)
+
+```
+
+Restrições
+- ON DELETE especifica o que acontece com os registros dependentes quando um registro pai é excluido
+- ON UPDATE define o comportamento dos registros dependentes quando um registro pai é atualizado
+- CASCADE, SET NULL, SET DEFAULT e RESTRICT
+  
+
+
+
 
 
 
