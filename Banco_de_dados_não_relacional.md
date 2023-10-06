@@ -3,3 +3,4 @@
 - Termo correto: NOT Only SQL
 - Não seguem modelo de tabelas e relacionamentos
 
+
